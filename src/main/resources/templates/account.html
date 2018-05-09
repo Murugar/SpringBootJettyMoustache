@@ -1,0 +1,45 @@
+{{!
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Account</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width" />
+  <base href="/" />
+</head>
+<body>}}
+{{#layout}}
+
+<div class="container">
+
+   <br/>
+  
+   <div class="panel panel-primary">
+   
+   <div class="panel-heading">Accounts</div>
+
+   <div class="panel-body">
+  
+  <table class="table table-striped table-bordered">
+    <thead>
+    <tr class="success text-primary">
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#accounts}}
+    <tr class="info text-danger">
+      <td>{{name}}</td>
+      <td>{{email}}</td>
+    </tr>
+    {{/accounts}}
+    </tbody>
+  </table>
+  </div>
+  </div>
+</div>
+{{/layout}}
+{{!</body></html>}}
